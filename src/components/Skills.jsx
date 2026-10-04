@@ -9,6 +9,7 @@ const frontend = [
   "HTML5",
   "CSS3",
   "Tailwind CSS",
+  "Bootstrap",
   "React Hooks",
   "Responsive Web Design",
 ];
@@ -25,7 +26,7 @@ const backend = [
 
 const database = ["MongoDB", "Mongoose"];
 
-const tools = ["Git", "GitHub", "VS Code", "Vite", "Stripe", "Razorpay"];
+const tools = ["Git", "GitHub", "VS Code", "Vite", "Stripe", "Razorpay"," Postman",   "Vercel"];
 
 function Skills() {
   return (

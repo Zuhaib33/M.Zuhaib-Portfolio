@@ -20,7 +20,7 @@ function ProjectCard({
         <img
           src={image}
           alt={imageAlt}
-          className="w-full rounded-lg border border-line"
+          className="w-full rounded-lg border border-line h-full"
         />
       </div>
 

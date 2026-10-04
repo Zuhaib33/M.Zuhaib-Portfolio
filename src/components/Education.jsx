@@ -17,7 +17,7 @@ function Education() {
               Bachelor of Science in Computer Science (BSCS)
             </h3>
             <p className="mt-1.5 text-sm text-fog">
-              Currently studying — building a foundation in programming, data
+              Recently Completed   — building a foundation in programming, data
               structures, databases and software development.
             </p>
           </div>

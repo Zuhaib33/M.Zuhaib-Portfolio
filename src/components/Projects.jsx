@@ -4,8 +4,8 @@ import ProjectCard from "./ProjectCard.jsx";
 
 // Project pictures.
 // Replace these two files in src/assets/ with your own screenshots.
-import foreverImage from "../assets/forever-ecommerce.png";
-import doctorImage from "../assets/doctor-appointment.png";
+import foreverImage from "../assets/forever-ecommerce.jpeg";
+import doctorImage from "../assets/doctor-appointment.jpeg";
 
 // Admin panel and API details for Forever E-Commerce
 const adminFeatures = [

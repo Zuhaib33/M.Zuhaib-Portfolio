@@ -4,7 +4,7 @@ import { profile } from "../data/profile.js";
 
 // The photo is imported from the assets folder.
 // To use your own picture, replace src/assets/profile.png
-import profilePhoto from "../assets/profile.png";
+import profilePhoto from "../assets/profile.jpeg";
 
 // Short list of qualities shown under the heading
 const qualities = [
