@@ -1,12 +1,8 @@
 import { Github, Linkedin, Mail } from "lucide-react";
 import CodeCard from "./CodeCard.jsx";
 import { profile } from "../data/profile.js";
-
-// The photo is imported from the assets folder.
-// To use your own picture, replace src/assets/profile.png
 import profilePhoto from "../assets/profile.jpeg";
 
-// Short list of qualities shown under the heading
 const qualities = [
   "Problem Solver",
   "Full-Stack Developer",
@@ -18,7 +14,6 @@ function Hero() {
   return (
     <section id="home" className="px-5 pt-28 pb-20 sm:px-8 md:pt-36 md:pb-28">
       <div className="mx-auto grid max-w-6xl items-center gap-14 lg:grid-cols-2">
-        {/* ---------- Left side: text ---------- */}
         <div>
           <p className="inline-flex items-center gap-2 rounded-full border border-line bg-panel px-3.5 py-1.5 font-mono text-xs text-fog">
             <span className="h-2 w-2 rounded-full bg-mint" />
@@ -42,7 +37,6 @@ function Hero() {
             right through to the interface people actually use.
           </p>
 
-          {/* qualities */}
           <ul className="mt-6 flex flex-wrap gap-2">
             {qualities.map((item) => (
               <li
@@ -54,7 +48,6 @@ function Hero() {
             ))}
           </ul>
 
-          {/* buttons */}
           <div className="mt-8 flex flex-wrap gap-3">
             <a
               href="#projects"
@@ -70,7 +63,6 @@ function Hero() {
             </a>
           </div>
 
-          {/* social links */}
           <div className="mt-8 flex gap-3">
             <a
               href={profile.github}
@@ -100,7 +92,6 @@ function Hero() {
           </div>
         </div>
 
-        {/* ---------- Right side: photo + code window ---------- */}
         <div className="mx-auto w-full max-w-md">
           <img
             src={profilePhoto}
@@ -108,7 +99,6 @@ function Hero() {
             className="aspect-square w-full rounded-2xl border border-line object-cover"
           />
 
-          {/* the code window sits under the photo */}
           <div className="mt-6">
             <CodeCard />
           </div>

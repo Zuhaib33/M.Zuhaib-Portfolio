@@ -8,14 +8,11 @@ import {
 } from "../data/profile.js";
 
 function Contact() {
-  // One piece of state per input - simple and easy to follow
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [sent, setSent] = useState(false);
 
-  // This portfolio has no backend, so the form opens the visitor's
-  // own email app with the message already filled in (mailto).
   function handleSubmit(event) {
     event.preventDefault();
 
@@ -40,7 +37,6 @@ function Contact() {
         />
 
         <div className="grid gap-6 lg:grid-cols-[1fr_1.2fr]">
-          {/* ---------- contact details ---------- */}
           <div className="h-full rounded-2xl border border-line bg-panel p-6 sm:p-7">
             <h3 className="font-display text-lg font-semibold text-chalk">
               Get in touch
@@ -93,18 +89,13 @@ function Contact() {
               </a>
             </div>
 
-            {/* Reminder shown only while the placeholders are unedited.
-                  Delete this block once you add your real details. */}
             {(emailIsPlaceholder || linkedinIsPlaceholder) && (
               <p className="mt-6 rounded-lg border border-line bg-ink p-3 font-mono text-[11.5px] leading-5 text-fog">
-                {"// TODO: add real contact details in"}
-                <br />
-                {"// src/data/profile.js"}
+                Add your real contact details in the profile file to finish this section.
               </p>
             )}
           </div>
 
-          {/* ---------- contact form ---------- */}
           <div className="rounded-2xl border border-line bg-panel p-6 sm:p-7">
             <form onSubmit={handleSubmit} className="space-y-5">
               <div>

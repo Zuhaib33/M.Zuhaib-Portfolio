@@ -1,6 +1,5 @@
 import { Github, ExternalLink, Check } from "lucide-react";
 
-// One project card. Everything comes in through props from Projects.jsx
 function ProjectCard({
   image,
   imageAlt,
@@ -15,7 +14,6 @@ function ProjectCard({
 }) {
   return (
     <article className="grid gap-8 rounded-2xl border border-line bg-panel p-6 transition-colors hover:border-mint/40 md:grid-cols-2 md:p-8">
-      {/* project picture */}
       <div className="order-1 md:order-none">
         <img
           src={image}
@@ -24,7 +22,6 @@ function ProjectCard({
         />
       </div>
 
-      {/* project details */}
       <div>
         <div className="flex flex-wrap items-center gap-3">
           <h3 className="font-display text-xl font-bold text-chalk sm:text-2xl">
@@ -39,7 +36,6 @@ function ProjectCard({
           {description}
         </p>
 
-        {/* technologies */}
         <ul className="mt-5 flex flex-wrap gap-2">
           {tech.map((item) => (
             <li
@@ -51,7 +47,6 @@ function ProjectCard({
           ))}
         </ul>
 
-        {/* features */}
         <ul className="mt-5 grid gap-2 sm:grid-cols-2">
           {features.map((item) => (
             <li key={item} className="flex gap-2 text-[13px] text-fog">
@@ -61,7 +56,6 @@ function ProjectCard({
           ))}
         </ul>
 
-        {/* buttons - only shown when a link exists */}
         <div className="mt-7 flex flex-wrap gap-3">
           {live && (
             <a

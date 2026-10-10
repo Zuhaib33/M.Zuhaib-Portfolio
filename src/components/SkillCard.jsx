@@ -1,7 +1,3 @@
-// One skill group card.
-// The icon is passed in as a prop from Skills.jsx, for example:
-// <SkillCard icon={<Monitor />} title="Frontend" items={["React.js"]} />
-
 function SkillCard({ icon, title, items, note, color }) {
   return (
     <div className="flex h-full flex-col rounded-xl border border-line bg-panel p-5">
@@ -14,7 +10,6 @@ function SkillCard({ icon, title, items, note, color }) {
         </h3>
       </div>
 
-      {/* the list of skills */}
       <ul className="mt-5 flex-1 space-y-2.5">
         {items.map((item) => (
           <li

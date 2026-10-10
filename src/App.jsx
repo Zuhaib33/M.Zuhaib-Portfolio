@@ -8,8 +8,6 @@ import Education from "./components/Education.jsx";
 import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
 
-// App only puts the sections in order.
-// All the real content lives inside the components above.
 function App() {
   return (
     <>

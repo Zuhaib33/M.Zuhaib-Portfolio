@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
-// The navigation links.
-// "id" must match the id of the section in App.jsx
 const links = [
   { id: "home", label: "Home" },
   { id: "about", label: "About" },
@@ -13,7 +11,6 @@ const links = [
 ];
 
 function Navbar() {
-  // One piece of state: is the mobile menu open or closed?
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -22,14 +19,12 @@ function Navbar() {
         aria-label="Main navigation"
         className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:px-8"
       >
-        {/* Logo */}
         <a href="#home" className="font-mono text-base font-bold text-chalk">
           <span className="text-mint">&lt;</span>
           zuhaib
           <span className="text-azure"> /&gt;</span>
         </a>
 
-        {/* Links for tablet and desktop */}
         <ul className="hidden items-center gap-1 md:flex">
           {links.map((link) => (
             <li key={link.id}>
@@ -43,7 +38,6 @@ function Navbar() {
           ))}
         </ul>
 
-        {/* Hamburger button for mobile */}
         <button
           type="button"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -55,7 +49,6 @@ function Navbar() {
         </button>
       </nav>
 
-      {/* Mobile menu - only shown when menuOpen is true */}
       {menuOpen && (
         <ul className="border-t border-line bg-ink px-5 py-3 md:hidden">
           {links.map((link) => (

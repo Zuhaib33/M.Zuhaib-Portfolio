@@ -2,7 +2,6 @@ import { Monitor, Server, Database, Wrench } from "lucide-react";
 import SectionTitle from "./SectionTitle.jsx";
 import SkillCard from "./SkillCard.jsx";
 
-// Each group is just a simple array of strings.
 const frontend = [
   "React.js",
   "JavaScript",
@@ -26,7 +25,7 @@ const backend = [
 
 const database = ["MongoDB", "Mongoose"];
 
-const tools = ["Git", "GitHub", "VS Code", "Vite", "Stripe", "Razorpay"," Postman",   "Vercel"];
+const tools = ["Git", "GitHub", "VS Code", "Vite", "Stripe", "Razorpay", "Postman", "Vercel"];
 
 function Skills() {
   return (

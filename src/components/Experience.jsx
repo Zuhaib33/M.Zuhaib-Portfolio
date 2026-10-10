@@ -28,9 +28,7 @@ function Experience() {
       <div className="mx-auto max-w-6xl">
         <SectionTitle tag="Experience" title="Where I've Worked" />
 
-        {/* timeline: a vertical line with one entry on it */}
         <div className="relative border-l border-line pl-6 sm:pl-10">
-          {/* dot on the timeline */}
           <span className="absolute -left-[7px] top-2 h-3.5 w-3.5 rounded-full border-2 border-ink bg-mint" />
 
           <div className="rounded-2xl border border-line bg-panel p-6 transition-colors hover:border-mint/40 sm:p-8">

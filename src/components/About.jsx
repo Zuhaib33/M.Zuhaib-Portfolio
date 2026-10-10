@@ -1,7 +1,6 @@
 import { Layers, Server, ShieldCheck, GitBranch } from "lucide-react";
 import SectionTitle from "./SectionTitle.jsx";
 
-// A small card used four times below. Simple props only.
 function InfoCard({ icon, title, text }) {
   return (
     <div className="rounded-xl border border-line bg-panel p-5 transition-colors hover:border-mint/50">
@@ -21,10 +20,9 @@ function About() {
         <SectionTitle tag="About" title="About Me" />
 
         <div className="grid gap-12 lg:grid-cols-[1.1fr_1fr] lg:gap-16">
-          {/* text column */}
           <div className="space-y-5 text-[15px] leading-relaxed text-fog">
             <p>
-              I'm a BS Computer Science student and a MERN Stack Developer. My
+              I am recently completed my graduation in Computer Science and a MERN Stack Developer. My
               focus is web development — specifically, building practical
               full-stack applications where the frontend, the API and the
               database are all part of the same piece of work.
@@ -47,7 +45,7 @@ function About() {
             </p>
 
             <div className="rounded-lg border border-line bg-panel p-4 font-mono text-[13px] leading-6">
-              <span className="text-fog">// currently</span>
+              <span className="text-fog">Currently</span>
               <br />
               <span className="text-[#c792ea]">studying</span>
               <span className="text-fog">: </span>
@@ -59,7 +57,6 @@ function About() {
             </div>
           </div>
 
-          {/* cards column */}
           <div className="grid gap-4 sm:grid-cols-2">
             <InfoCard
               icon={<Layers size={22} />}

@@ -1,13 +1,9 @@
 import { ShieldCheck, Server } from "lucide-react";
 import SectionTitle from "./SectionTitle.jsx";
 import ProjectCard from "./ProjectCard.jsx";
-
-// Project pictures.
-// Replace these two files in src/assets/ with your own screenshots.
 import foreverImage from "../assets/forever-ecommerce.jpeg";
 import doctorImage from "../assets/doctor-appointment.jpeg";
 
-// Admin panel and API details for Forever E-Commerce
 const adminFeatures = [
   "Secure admin login",
   "Add products",
@@ -39,7 +35,6 @@ function Projects() {
         />
 
         <div className="space-y-6">
-          {/* ---------- Project 1 ---------- */}
           <ProjectCard
             image={foreverImage}
             imageAlt="Preview of the Forever E-Commerce storefront"
@@ -72,7 +67,6 @@ function Projects() {
             github="https://github.com/Zuhaib33/Forever-E-Commerce-"
           />
 
-          {/* ---------- Project 2 ---------- */}
           <ProjectCard
             image={doctorImage}
             imageAlt="Preview of the Doctor Appointment booking interface"
@@ -90,11 +84,10 @@ function Projects() {
               "User profile",
               "Appointment history",
             ]}
-            note="// Live demo and repository links coming soon"
+            note="Live demo and repository links coming soon"
           />
         </div>
 
-        {/* Extra detail about the main project */}
         <div className="mt-6 grid gap-6 md:grid-cols-2">
           <div className="rounded-2xl border border-line bg-panel p-6">
             <div className="flex items-center gap-3">

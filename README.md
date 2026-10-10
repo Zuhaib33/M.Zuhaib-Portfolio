@@ -104,7 +104,7 @@ Then open the address shown in the terminal (usually
 Open **`src/data/profile.js`** and change one line:
 
 ```js
-email: "YOUR_EMAIL@example.com",   // <-- put your real email here
+email: "YOUR_EMAIL@example.com"
 ```
 
 That single value is used by the hero email icon, the contact card and
@@ -121,9 +121,8 @@ linkedin: "https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME",
 Replace it with your real profile URL. The hero icon, contact card and
 footer icon all update automatically.
 
-While these two placeholders are still in place, a small `// TODO` note
-appears in the contact section to remind you. It disappears by itself
-once you enter real values.
+While these two placeholders are still in place, the contact section will
+show a reminder message until you enter real values.
 
 ---
 
@@ -160,10 +159,8 @@ code changes needed at all.
 top of two files:
 
 ```js
-// src/components/Hero.jsx
 import profilePhoto from "../assets/profile.png";
 
-// src/components/Projects.jsx
 import foreverImage from "../assets/forever-ecommerce.png";
 import doctorImage from "../assets/doctor-appointment.png";
 ```
@@ -201,10 +198,10 @@ All colours are defined once in `src/index.css`:
 
 ```css
 @theme {
-  --color-ink: #06080b;    /* page background */
-  --color-panel: #0c1117;  /* card background */
-  --color-mint: #35e0a1;   /* primary accent */
-  --color-azure: #5aa9ff;  /* secondary accent */
+  --color-ink: #06080b;
+  --color-panel: #0c1117;
+  --color-mint: #35e0a1;
+  --color-azure: #5aa9ff;
   ...
 }
 ```

@@ -1,7 +1,3 @@
-// Shared heading used at the top of every section.
-// The small mono line above the heading is written like a React
-// component tag, which fits the developer theme of the site.
-
 function SectionTitle({ tag, title, subtitle }) {
   return (
     <div className="mb-10 md:mb-14">
@@ -15,7 +11,6 @@ function SectionTitle({ tag, title, subtitle }) {
         <p className="mt-4 max-w-xl text-fog leading-relaxed">{subtitle}</p>
       )}
 
-      {/* thin accent rule under the heading */}
       <div className="mt-6 h-px w-24 bg-gradient-to-r from-mint to-azure" />
     </div>
   );
